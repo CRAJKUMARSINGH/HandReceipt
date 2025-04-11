@@ -5,7 +5,13 @@ import os
 from num2words import num2words
 from weasyprint import HTML
 import logging
-import os
+
+print(os.getcwd())
+print(os.listdir())
+
+template_dir = os.path.join(os.path.dirname(__file__), 'templates')
+receipt_template = open(os.path.join(template_dir, 'receipts.html')).read()
+
 print("CWD:", os.getcwd())
 print("FILES:", os.listdir("templates"))
 

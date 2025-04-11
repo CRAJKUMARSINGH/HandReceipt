@@ -3,7 +3,7 @@ services:
     name: Hand-Receipt-Generator
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn HrApp5:app
+    startCommand: gunicorn app:app
     envVars:
       - key: FLASK_ENV
         value: production

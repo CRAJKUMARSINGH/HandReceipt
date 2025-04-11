@@ -5,6 +5,9 @@ import os
 from num2words import num2words
 from weasyprint import HTML
 import logging
+import os
+print("CWD:", os.getcwd())
+print("FILES:", os.listdir("templates"))
 
 app = Flask(__name__)
 
